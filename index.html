@@ -15,7 +15,7 @@
   <header class="banner">
     <nav class="navbar navbar-expand-lg navbar-dark nav-background-color">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Início</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,15 +23,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#perfil">Perfil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#estudos">Estudos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#projetos">Projetos</a>
             </li>
           </ul>
+          <button class="btn btn-secondary" id="buttonMudarCor" onClick="mudarCor()">Light</button>
         </div>
       </div>
     </nav>
@@ -59,8 +60,8 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="row mt-5  justify-content-center pb-5">
+  <main class="container pt-3" id="perfil">
+    <section class="row mt-5 pb-5 pt-5 justify-content-center ">
       <img class="perfil"src="img/perfil.jpg" alt="foto Perfil" class="col-6 " />
       <div class="col-6 pt-4">
         <h2>Wesley de Souza</h2>
@@ -68,9 +69,9 @@
         <p class="mt-5 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur optio beatae. Veniam obcaecati, ut architecto illo omnis, quos pariatur commodi, consectetur possimus fuga corrupti amet! Amet eaque ex quod.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur optio beatae. Veniam obcaecati, ut architecto illo omnis, quos pariatur commodi, consectetur possimus fuga corrupti amet! Amet eaque ex quod.</p>
       </div>
     </section>
-    <hr>
+    <hr id="estudos">
 
-    <section class="row mt-5  justify-content-center pb-5">
+    <section class="row mt-5 pb-5 pt-5 justify-content-center ">
       <div class="text-center mb-5">
         <h2>O que estou fazendo...</h2>
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -101,9 +102,9 @@
       </div>
 
     </section>
-    <hr>
+    <hr id="projetos">
 
-    <section class="row mt-5  justify-content-center pb-5">
+    <section class="row mt-5 pb-5 pt-5 justify-content-center">
       
       <div class="text-center mb-5">
         <h2>Projetos</h2>
@@ -149,8 +150,9 @@
       </div> 
     </section>
   </main>
-  <footer class="container text-center">
+  <footer id="footer"class="container text-center">
     <p class=" center text-secondary">COPYRIGHT &copy; 2021 Wesley de Souza</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
