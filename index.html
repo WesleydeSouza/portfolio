@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Portfólio</title>
 </head>
 
@@ -16,6 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark nav-background-color">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Início</a>
+        <button class="btn btn-secondary btnMobile" id="buttonMudarCorMobile" onClick="mudarCor()">Light</button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,14 +34,14 @@
               <a class="nav-link" href="#projetos">Projetos</a>
             </li>
           </ul>
-          <button class="btn btn-secondary" id="buttonMudarCor" onClick="mudarCor()">Light</button>
+          <button class="btn btn-secondary btn-ml" id="buttonMudarCor" onClick="mudarCor()">Light</button>
         </div>
       </div>
     </nav>
     <div class="center">
       <div class="text-light container">
         <h1 class="center">Bem-Vindo</h1>
-        <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio in nobis reiciendis, necessitatibus deserunt aliquam esse. Eveniet magni cumque facere, recusandae, eum quisquam assumenda voluptatibus in quo officia modi deleniti.</p>
+        <p class="center p-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio in nobis reiciendis, necessitatibus deserunt aliquam esse. Eveniet magni cumque facere, recusandae, eum quisquam assumenda voluptatibus in quo officia modi deleniti.</p>
         <div class="center">
           <div class="center mt-4 icon-group">
             <a  class="icon center " href="https://wa.me/5551985462129" target="_blank">
@@ -61,23 +63,23 @@
   </header>
 
   <main class="container pt-3" id="perfil">
-    <section class="row mt-5 pb-5 pt-5 justify-content-center ">
+    <section class="row mt-5 pb-5 pt-5 justify-content-center mobileFullWidth">
       <img class="perfil"src="img/perfil.jpg" alt="foto Perfil" class="col-6 " />
-      <div class="col-6 pt-4">
-        <h2>Wesley de Souza</h2>
-        <h4>Desenvolvedor Front-End</h4>
-        <p class="mt-5 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur optio beatae. Veniam obcaecati, ut architecto illo omnis, quos pariatur commodi, consectetur possimus fuga corrupti amet! Amet eaque ex quod.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur optio beatae. Veniam obcaecati, ut architecto illo omnis, quos pariatur commodi, consectetur possimus fuga corrupti amet! Amet eaque ex quod.</p>
+      <div class="col-6 pt-4 mobileFullWidth">
+        <h2 class="text-center">Wesley de Souza</h2>
+        <h4 class="text-center">Desenvolvedor Front-End</h4>
+        <p class="mt-5 text-secondary text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur optio beatae. Veniam obcaecati, ut architecto illo omnis, quos pariatur commodi, consectetur possimus fuga corrupti amet! Amet eaque ex quod.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur optio beatae. Veniam obcaecati, ut architecto illo omnis, quos pariatur commodi, consectetur possimus fuga corrupti amet! Amet eaque ex quod.</p>
       </div>
     </section>
     <hr id="estudos">
 
-    <section class="row mt-5 pb-5 pt-5 justify-content-center ">
+    <section class="row mt-5 pb-5 pt-5 justify-content-center  text-center">
       <div class="text-center mb-5">
         <h2>O que estou fazendo...</h2>
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
-      <div class="col-4">
+      <div class="col-4 mobileFullWidth">
         <figure class="figure">
           <img  src="img/github.png" alt="">
         </figure>
@@ -85,7 +87,7 @@
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
-      <div class="col-4">
+      <div class="col-4 mobileFullWidth">
         <figure class="figure">
           <img  src="img/github.png" alt="">
         </figure>
@@ -93,7 +95,7 @@
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
-      <div class="col-4">
+      <div class="col-4 mobileFullWidth">
         <figure class="figure">
           <img  src="img/github.png" alt="">
         </figure>
@@ -111,38 +113,38 @@
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
-      <div class="container row">
-        <figure class="col-4">
+      <div class="container row ">
+        <figure class="col-4 mobileFullWidth mobileProj">
           <a href="#">
             <img class="projetos-img" src="img/wall1.jpg" alt="">
           </a>
         </figure>
         
-        <figure class="col-4">
+        <figure class="col-4 mobileFullWidth mobileProj">
           <a href="#">
             <img class="projetos-img" src="img/wall1.jpg" alt="">
           </a>
         </figure>
         
-        <figure class="col-4">
+        <figure class="col-4 mobileFullWidth mobileProj">
           <a href="#">
             <img class="projetos-img" src="img/wall1.jpg" alt="">
           </a>
         </figure>
         
-        <figure class="col-4 mt-5">
+        <figure class="col-4 mt-5 mobileFullWidth mobileProj ">
           <a href="#">
             <img class="projetos-img" src="img/wall1.jpg" alt="">
           </a>
         </figure>
         
-        <figure class="col-4 mt-5">
+        <figure class="col-4 mt-5 mobileFullWidth mobileProj">
           <a href="#">
             <img class="projetos-img" src="img/wall1.jpg" alt="">
           </a>
         </figure>
         
-        <figure class="col-4 mt-5">
+        <figure class="col-4 mt-5 mobileFullWidth mobileProj">
           <a href="#">
             <img class="projetos-img" src="img/wall1.jpg" alt="">
           </a>
@@ -154,5 +156,6 @@
     <p class=" center text-secondary">COPYRIGHT &copy; 2021 Wesley de Souza</p>
   </footer>
   <script src="js/script.js"></script>
+  
 </body>
 </html>
