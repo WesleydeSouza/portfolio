@@ -75,8 +75,8 @@
     }
 
 .projetos-img{
-    width: 90% !important;
-    height: auto !important;
+    width: 100% !important;
+    height: 200px !important;
 }
 
 .projetos-img:hover{
